@@ -12,7 +12,7 @@ class WaterPoolTest {
 
     @Test
     public void testNegativeHeight() {
-        int[] input = {1, 32001, 3};
+        int[] input = {-1, 5, 3};
         assertThrows(IllegalArgumentException.class, () -> WaterPool.calculateWaterAmount(input));
     }
 
